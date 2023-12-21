@@ -137,19 +137,19 @@ import (
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
 )
 
-const appName = "WasmApp"
+const appName = "ShrigmataApp"
 
 // We pull these out so we can set them with LDFLAGS in the Makefile
 var (
-	NodeDir      = ".wasmd"
-	Bech32Prefix = "wasm"
+	NodeDir      = ".shrigmata"
+	Bech32Prefix = "shrigma"
 )
 
 // These constants are derived from the above variables.
 // These are the ones we will want to use in the code, based on
 // any overrides above
 var (
-	// DefaultNodeHome default home directories for wasmd
+	// DefaultNodeHome default home directories for shrigd
 	DefaultNodeHome = os.ExpandEnv("$HOME/") + NodeDir
 
 	// Bech32PrefixAccAddr defines the Bech32 prefix of an account's address
